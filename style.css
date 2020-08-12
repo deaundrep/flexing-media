@@ -6,3 +6,58 @@
   height: 80px;
   border: 2px solid orange;
 }
+body{
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  body{
+    display: flex;
+    flex-direction:column ;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+    .square{
+      color:lightblue;
+      flex: 1;
+    }
+  
+  }
+  
+  
+  @media (max-width: 800px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+    .square{
+      color: palegreen;
+  }
+  }
+  
+  @media (max-width: 599px) {
+  body{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .square{
+    color:gray;
+  }
+  }
